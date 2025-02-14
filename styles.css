@@ -1,3 +1,22 @@
+@media screen and (max-width:792px ) {
+    .total-container{
+        width: 90vw !important;
+    }
+}
+@media screen and (max-width:393px ){
+    .total-container{
+        width: 90vw !important;
+    }
+
+    input{
+        width: 50vw !important;
+    }
+}
+
+
+
+
+
 body{
  
     background-image:url("images/background.png");
@@ -28,6 +47,7 @@ body{
     flex-direction: column;
     position: relative;
     margin-left: 10%;
+    height: 100%;
 }
 
 h1{
@@ -62,7 +82,7 @@ input{
 }
 
 
-button{
+.add-button{
     width: 4.5rem;
     position: relative;
     border-radius: 0.3rem;
@@ -75,7 +95,7 @@ button{
     border: white solid 1px ;
 }
 
-button:hover{
+.add-button:hover{
     cursor: pointer;
     opacity: 0.7;
 }
@@ -117,7 +137,7 @@ ul li{
         position: relative;
     }
 
-ul li::before{
+/* ul li::before{
     content: "";
     background-image: url(images/button\ unchecked.png);
     border-radius: 50%;
@@ -131,7 +151,12 @@ ul li::before{
     left: 2%;
 }
 
-ul li::after{
+ul li.checked{
+    background-color:#FFF0DC;
+    text-decoration: overline;
+}
+
+ul li::before{
     content: "";
     background-image: url(images/button\ checked.png);
     border-radius: 50%;
@@ -143,4 +168,26 @@ ul li::after{
     top: 32%;
     
     left: 2%;
+}
+
+}
+
+.hide-before::before {
+    display: none;
+}
+
+.hide-after::after {
+    display: none;
+} */
+
+
+b{
+    background-image: url(images/button-unchecked.png);
+    height: 27px;
+    width: 27px;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    left: 2%;
+    mask-type: initial;
 }
